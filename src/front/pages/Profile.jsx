@@ -21,9 +21,9 @@ const Profile = () => {
   if (error) return <p style={{ color: "red" }}>{error}</p>;
 
   if (!user) return <p>Cargando perfil...</p>;
-
+  
   return (
-    <div>
+    <div className="profile">
       <h2>Perfil de usuario</h2>
       <p>ID: {user.id}</p>
       <p>Email: {user.email}</p>
