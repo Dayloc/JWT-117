@@ -1,0 +1,138 @@
+/* Contenedor general centrado */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Card blanca con sombra */
+.login-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+/* Título */
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Formulario */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.login-card input {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Botón */
+.login-card button {
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1e3c72;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-card button:hover {
+  background-color: #16335c;
+}
+
+/* Mensajes */
+.login-card .error {
+  color: red;
+  margin-top: 12px;
+}
+
+.login-card .success {
+  color: green;
+  margin-top: 12px;
+}
+
+
+/* Contenedor general centrado */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Card blanca con sombra */
+.register-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+/* Título */
+.register-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Formulario */
+.register-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.register-card input {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Botón */
+.register-card button {
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1e3c72;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-card button:hover {
+  background-color: #16335c;
+}
+
+/* Mensajes */
+.register-card .error {
+  color: red;
+  margin-top: 12px;
+}
+
+.register-card .success {
+  color: green;
+  margin-top: 12px;
+}
