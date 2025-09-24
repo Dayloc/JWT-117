@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { getProfile } from "./../services/fetch"; // importa tu fetch.js
-
+import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 const Profile = () => {
   const [user, setUser] = useState(null);
   const [error, setError] = useState("");
-
+  const { store, dispatch } = useGlobalReducer()
+ 
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const data = await getProfile();
+        const data = await getProfile(dispatch);
         setUser(data);
       } catch (err) {
         setError("No autorizado o token inválido ❌");

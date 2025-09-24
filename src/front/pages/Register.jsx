@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { register } from "./../services/fetch";
+import { useNavigate } from "react-router-dom";
 
 
 const Register = () => {
@@ -7,6 +8,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,7 +18,8 @@ const Register = () => {
     try {
       const data = await register(email, password);
       setSuccess("Registro exitoso ✅");
-      console.log("Usuario registrado:", data);
+      navigate("/login");
+     
     } catch (err) {
       setError("Error al registrar ❌");
     }

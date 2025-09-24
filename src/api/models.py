@@ -13,8 +13,7 @@ class User(db.Model):
     is_active: Mapped[bool] = mapped_column(Boolean(), nullable=False)
 
     def generate_id(self):
-        return str(uuid.uuid4())
-        
+        return str(uuid.uuid4()) 
         
         
         

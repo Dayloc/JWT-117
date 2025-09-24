@@ -57,7 +57,7 @@ export const login = async (email, password) => {
 
 
 // Obtener perfil (ruta protegida)
-export const getProfile = async () => {
+export const getProfile = async (dispatch) => {
   try {
     const token = localStorage.getItem("token");
     const response = await fetch(`${API_URL}/profile`, {
@@ -70,6 +70,7 @@ export const getProfile = async () => {
     if (!response.ok) throw new Error("No autorizado o token inválido ❌");
 
     const data = await response.json();
+    dispatch({ type: "set_perfilUsuario", payload: data });
     return data;
   } catch (error) {
     console.error("Error en getProfile:", error);
