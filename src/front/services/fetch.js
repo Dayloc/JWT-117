@@ -53,7 +53,7 @@ export const login = async (email, password) => {
     console.error("Error en login:", error);
     throw error; // lanza error para que lo capture el frontend
   }
-};
+};     
 
 
 // Obtener perfil (ruta protegida)

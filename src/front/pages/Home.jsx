@@ -1,10 +1,13 @@
 import React, { useEffect } from "react"
 import rigoImageUrl from "../assets/img/rigo-baby.jpg";
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
+import {useNavigate} from "react-router-dom";
+
 
 export const Home = () => {
 
 	const { store, dispatch } = useGlobalReducer()
+	const navigate = useNavigate()
 
 	
 	return (
@@ -14,7 +17,7 @@ export const Home = () => {
 				<img src={rigoImageUrl} className="img-fluid rounded-circle mb-3" alt="Rigo Baby" />
 			</p>
 			
-			
+			<button className=" btn btn-primary" onClick={()=>navigate("/prueba")}> prueba</button>
 		
 		</div>
 	);
