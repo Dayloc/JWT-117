@@ -1,4 +1,4 @@
-const API_URL ="https://shiny-invention-5gg6wxg57xjph9q4-3001.app.github.dev/api";
+const API_URL = "http://127.0.0.1:3001/api";
 
 // Registro de usuario
 export const register = async (email, password) => {
@@ -54,7 +54,6 @@ export const login = async (email, password) => {
     throw error; // lanza error para que lo capture el frontend
   }
 };     
-
 
 // Obtener perfil (ruta protegida)
 export const getProfile = async (dispatch) => {
